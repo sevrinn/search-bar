@@ -7,5 +7,13 @@ searchBar.addEventListener("keyup", (e) => {
   for(let i = 0; i < allUsers.length; i++) {
     const currentUser = allUsers[i].textContent.toLowerCase()
     console.log(currentUser)
+
+    if(currentUser.includes(search)) {
+      allUsers[i].style.display = "block"
+    } else {
+      allUsers[i].style.display = "none"
+    }
   }
+
+  
 })
