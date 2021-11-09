@@ -5,7 +5,7 @@ searchBar.addEventListener("keyup", (e) => {
   let allUsers = document.querySelectorAll(".name")
   
   for(let i = 0; i < allUsers.length; i++) {
-    const currentName = allUsers[i].textContent.toLowerCase()
-    console.log(currentName)
+    const currentUser = allUsers[i].textContent.toLowerCase()
+    console.log(currentUser)
   }
 })
