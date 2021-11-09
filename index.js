@@ -2,5 +2,10 @@ const searchBar = document.querySelector("#search-bar")
 
 searchBar.addEventListener("keyup", (e) => {
   let search = e.target.value.toLowerCase()
-  console.log(search)
+  let allUsers = document.querySelectorAll(".name")
+  
+  for(let i = 0; i < allUsers.length; i++) {
+    const currentName = allUsers[i].textContent.toLowerCase()
+    console.log(currentName)
+  }
 })
